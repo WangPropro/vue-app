@@ -1,0 +1,179 @@
+{
+	// 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/index/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "测试页"
+		// 	}
+		// }, 
+		// navbar-自定义导航栏
+		{
+			"path": "pages/chat/chat",
+			"style": {
+				//"enablePullDownRefresh": true,
+				"navigationBarTitleText": "水栈"
+			}
+		}, {
+			"path": "pages/clock/clock",
+			"style": {
+				"navigationBarTitleText": "金钟罩"
+			}
+		}, {
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "咱家"
+				//"navigationStyle": "custom", //隐藏系统导航栏
+				//"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/ws/ws",
+			"style": {
+				"navigationBarTitleText": "临时聊天室"
+			}
+		}, {
+			"path": "pages/chatBox/chatBox",
+			"style": {
+				"navigationBarTitleText": "聊天框"
+			}
+		}, {
+			"path": "pages/slectCity/selectCity",
+			"style": {
+				"navigationBarTitleText": "城市选择",
+				"navigationBarBackgroundColor": "orange"
+			}
+		}, {
+			"path": "pages/comment/reply",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/comment/search",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/comment/publish",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/question/optimized-swiper",
+			"style": {
+				"navigationBarTitleText": "答题区"
+			}
+		}, {
+			"path": "pages/aboutUs/aboutUs",
+			"style": {
+				"navigationBarTitleText": "联系我们",
+				"navigationBarShadow": {
+					"colorType": "yellow"
+				}
+			}
+		},
+		{
+			"path": "pages/vedio/vedio",
+			"style": {
+				"navigationBarTitleText": "视频区"
+			}
+		},
+		{
+			"path": "pages/game/game",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#FFE4B5",
+				"navigationBarTextStyle": "white" //状态栏字体为白色
+			}
+		},
+		{
+			"path": "pages/goods-detail/sendForm",
+			"style": {
+				"navigationBarTitleText": "提交表单"
+			}
+		}, {
+			"path": "pages/game/drama",
+			"style": {
+				"navigationBarTitleText": "角色剧本"
+			}
+		}, {
+			"path": "pages/changepw/changepw",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		}, {
+			"path": "pages/version/version",
+			"style": {
+				"navigationBarTitleText": "检查更新"
+			}
+		}, {
+			"path": "pages/loading/loading",
+			"style": {
+				"navigationBarTitleText": "加载动画"
+			}
+		}, {
+			"path": "pages/goods-detail/scoreStore",
+			"style": {
+				"navigationBarTitleText": "积分商城"
+			}
+		}, {
+			"path": "pages/jury/jury",
+			"style": {
+				"navigationBarTitleText": "陪审团"
+			}
+		}, {
+			"path": "pages/jury/jury2",
+			"style": {
+				"navigationBarTitleText": "陪审团"
+			}
+		}, {
+			"path": "pages/jury/setReply"
+		}, {
+			"path": "pages/jury/baifenbi"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "杜骗宝",
+		"navigationBarBackgroundColor": "#FFE4B5",
+		"backgroundColor": "#F8F8F8"
+		// 去除顶部标题
+		//"navigationStyle": "custom",
+		//"app-plus": {
+		//	"titleView": false
+		//}
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"selectedColor": "orange",
+		"list": [
+			//{
+			// 		"text": "测试页",
+			// 		"pagePath": "pages/index/index",
+			// 		"iconPath": "static/logo.png",
+			// 		"selectedIconPath": "static/logo.png"
+			// 	},
+			{
+				"text": "水栈",
+				"pagePath": "pages/chat/chat",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png"
+			},
+			{
+				"text": "金钟罩",
+				"pagePath": "pages/clock/clock",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png"
+			},
+			{
+				"text": "咱家",
+				"pagePath": "pages/me/me",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png"
+			}
+		]
+	}
+}
