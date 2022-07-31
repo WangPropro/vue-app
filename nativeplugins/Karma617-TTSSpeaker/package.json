@@ -1,0 +1,31 @@
+{
+	"name": "文字转语音",
+	"id": "Karma617-TTSSpeaker",
+	"version": "1.0",
+	"description": "原生tts系统，可将文字转成语音播放，搭配第三方语音引擎可实现播放中文。",
+	"_dp_type":"nativeplugin",
+	"_dp_nativeplugin":{
+		"android": {
+			"plugins": [
+				{
+					"type": "module",
+					"name": "Karma617-TTSSpeaker",
+					"class": "com.qdapi.elfspeak.TTSSpeaker"
+				}
+			],
+			"integrateType": "aar",
+			"minSdkVersion": "16",
+			"permissions": [
+				"android.permission.WRITE_EXTERNAL_STORAGE",
+				"android.permission.READ_EXTERNAL_STORAGE"
+			],
+			"dependencies": [  
+				"com.android.support:recyclerview-v7:28.0.0",
+				"com.android.support:support-v4:28.0.0",
+				"com.android.support:appcompat-v7:28.0.0",
+				"com.alibaba:fastjson:1.1.46.android",
+				"com.facebook.fresco:fresco:0.12.0"
+			]
+		}
+	}
+}
